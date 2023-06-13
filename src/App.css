@@ -1,0 +1,45 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  background: black;
+  padding: 5px;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+#logo{
+  height: 100px;
+  margin-bottom: 0;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#mensagem_perfil{
+  display: flex;
+  align-items: center;
+}
+
+p{
+  margin-right: 20px;
+}
+
+#profile{
+  height: 60px;
+  margin-right: 20px;
+}
