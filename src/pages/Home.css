@@ -1,6 +1,7 @@
 #base-banner{
     position: relative;
     display: inline-block;
+    margin-bottom: 3%;
 }
 
 #button{
@@ -9,13 +10,15 @@
     left: 85%;
     transform: translate(-50%, -50%);
     padding: 10px 20px;
-    background-color: #eeff00;
-    color: #000000;
+    background-color: #4076e9;
+    color: white;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    width: 10%;
+    width: 15%;
+    height: 6%;
+    font-size: 20px;
 }
 
 #banner{
@@ -24,6 +27,30 @@
 
 .base1{
     display: flex;
-    justify-content: space-around;
-    margin-top: 5%;
+    justify-content: space-evenly;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 12%;
+    margin-bottom: 5%;
+}
+
+#office{
+    margin-left: 10%;
+    width: 30%;
+}
+
+.Titulo{
+    font-size: 40px;
+}
+
+#objetivo{
+    margin-right: 15%;
+    width: 30%;
+    margin-bottom: 3%;
 }
