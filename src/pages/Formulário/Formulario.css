@@ -1,17 +1,18 @@
 
 .container{
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #372381;
+  background-color: #ffffff;
   color: #FFF;
   padding: 14px;
 }
 
 .title{
   margin-bottom: 14px;
+  color: black;
 }
 
 .form{
@@ -27,6 +28,7 @@
   border-radius: 4px;
   border: 0;
   padding: 0 8px;
+  border: 2px solid #539eda;
 }
 
 .textarea{
@@ -36,6 +38,7 @@
   padding: 8px;
   height: 94px;
   resize: none;
+  border: 2px solid #539eda;
 }
 
 .button{
@@ -43,12 +46,13 @@
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-  background-color: #4c82e7;
+  background-color: #539eda;
+  color: white;
   font-size: 18px;
   transition: background-color, transform 0.8s;
 }
 
 .button:hover{
-  background-color: #6393ee;
+  background-color: #89bee9;
   transform: scale(1.01);
 }

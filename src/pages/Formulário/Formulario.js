@@ -45,7 +45,7 @@ function Formulario() {
 
   return (
     <div className="container">
-      <h1 className="title">Contato</h1>
+      <h1 className="title">Nome Formulário</h1>
 
       <form className="form" onSubmit={sendEmail}>
         <input 

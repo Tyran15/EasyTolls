@@ -1,0 +1,45 @@
+#base-banner{
+    position: relative;
+    display: inline-block;
+}
+
+#button{
+    position: absolute;
+    top: 85%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #eeff00;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 10%;
+}
+
+#banner{
+    width: 100%;
+}
+
+.base1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 12%;
+}
+
+#office{
+    margin-left: 10%;
+}
+
+.Titulo{
+    font-size: 50px;
+}
