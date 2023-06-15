@@ -82,7 +82,7 @@ function Formulario() {
 
         <textarea 
           className="textarea"
-          placeholder="Digite sua mensagem..."
+          placeholder="Digite a sua ocorência..."
           onChange={(e) => setMessage(e.target.value)}
           value={message}
         />
