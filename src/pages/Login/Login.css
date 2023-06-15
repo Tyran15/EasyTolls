@@ -3,7 +3,60 @@ body{
     padding: 0;
 }
 
-input{
-    display: block;
+.Login{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2% 0;
 }
 
+#base-login{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#base-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo-texto{
+    height: 5rem;
+    width: 150%;
+    padding-left: 5%;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+#confirmar{
+    margin-top: 10%;
+    height: 5rem;
+    width: 156%;
+    border-radius: 20px;
+    background-color: #539ddb;
+    font-size: 30px;
+    color: white;
+    border: none;
+}
+
+#confirmar:hover{
+    background-color: #67a9df;
+}
+
+#tiulo{
+    color: #0f7ad1;
+}
+.texto1{
+    font-size: 50px;
+    margin: 0;
+    color: #0f7ad1;
+}
+
+#texto-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
