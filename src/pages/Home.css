@@ -5,6 +5,7 @@
 }
 
 #button{
+    display: flex;
     position: absolute;
     top: 85%;
     left: 85%;
@@ -19,6 +20,9 @@
     width: 15%;
     height: 6%;
     font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 #banner{
@@ -42,7 +46,10 @@
 
 #office{
     margin-left: 10%;
-    width: 30%;
+}
+
+#office-mobile{
+    display: none;
 }
 
 .Titulo{
@@ -52,4 +59,53 @@
 #objetivo{
     margin-right: 15%;
     margin-bottom: 5%;
+}
+
+#objetivo-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 730px){
+    #button{
+        display: none;
+    }
+
+    #banner{
+        display: none;
+    }
+
+    .Home{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .base1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+    }
+
+    #office{
+        margin-left: 0;
+        width: 65%;
+    }
+
+    #objetivo{
+        display: none;
+    }
+
+    #objetivo-mobile{
+        display: block;
+        width: 65%;
+    }
+
+    #office{
+        display: none;
+    }
+
+    #office-mobile{
+        display: block;
+        width: 65%;
+    }
 }

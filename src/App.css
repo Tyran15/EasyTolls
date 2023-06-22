@@ -1,9 +1,10 @@
 body{
   margin: 0;
   padding: 0;
+  min-height: 100%;
 }
 
-ul{
+#bg-link{
   text-decoration: none;
   list-style: none;
   display: flex;
@@ -13,21 +14,42 @@ ul{
   margin: 0;
 }
 
-a{
+.nav-list{
+  display: flex;
+  align-items: center;
+}
+
+.nav-list ul{
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li{
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.nav-list a{
+  text-decoration: none;
+  color: #000;
+}
+
+.link{
   text-decoration: none;
   color: white;
   font-size: 20px;
 }
 
 #logo{
-  height: 100px;
+  height: 7rem;
   margin-bottom: 0;
 }
 
 nav{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 
 #mensagem_perfil{
@@ -37,6 +59,7 @@ nav{
 
 p{
   margin-right: 20px;
+  font-size: 14px;
 }
 
 #profile{
@@ -50,9 +73,61 @@ p{
   align-items: center;
   background: #000;
   padding: 5px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .icons{
   width: 2%;
   margin: 0 1%;
+  cursor:pointer;
+}
+
+.mobile-menu-icon{
+  display: none;
+}
+
+.mobile-menu{
+  display: none;
+}
+
+#copyrigth{
+  display: none;
+}
+
+
+@media screen and (max-width: 730px){
+  .nav-list{
+    display: none;
+  }
+
+  .link{
+    font-size: 20px;
+  }
+
+  .icons{
+    display: none;
+  }
+
+  #copyrigth{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  #base-icons{
+    margin-top: 0rem;
+  }
+
+  #bg-link{
+    display: none;
+  }
+
+  nav{
+    background: #dfdfdf;
+  }
 }

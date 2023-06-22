@@ -1,0 +1,41 @@
+html, body, #root {
+    height: 100%;
+  }
+
+.ControleDeEstoque{
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.Estoque{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+#titulo{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.Conteudo-opção{
+    margin-top: 2rem;
+    font-size: 45px;
+}
+
+#opção{
+    height: 5rem;
+    font-size: 2rem;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid #539ddb;
+    cursor: pointer;
+}
