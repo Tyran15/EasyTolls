@@ -65,6 +65,47 @@
     display: none;
 }
 
+.base-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    padding: 1% 0;
+    width: 100%;
+}
+
+#base-feedback{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+#base-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback{
+    border: 3px solid #539eda;
+    border-radius: 5px;
+    background: none;
+    width: 100%;
+    resize: vertical;
+    outline: none;
+    margin-bottom: 3%;
+    height: 2rem;
+    padding-left: 1.5%;
+}
+
+#button-feedback{
+    border: none;
+    color: white;
+    height: 2rem;
+    width: 103%;
+    background-color: #539eda;
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 730px){
     #button{
         display: none;
@@ -107,5 +148,25 @@
     #office-mobile{
         display: block;
         width: 65%;
+    }
+
+    #base-feedback{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;padding: 0 10%;
+    }    
+
+    .feedback{
+        border: 2px solid #539eda;
+        border-radius: 5px;
+        background: none;
+        width: 100%;
+        resize: vertical;
+        outline: none;
+        margin-bottom: 3%;
+        height: 2rem;
+        padding-left: 1.5%;
+        margin-bottom: 5%;
     }
 }

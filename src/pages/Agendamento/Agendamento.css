@@ -1,0 +1,134 @@
+.Agendamento{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title{
+    font-size: 2rem;
+}
+
+.base-site{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#Calendario{
+    border: 3px solid #539eda;
+    color: #539eda;
+    border-radius: 5px;
+    height: 4rem;
+    width: 75%;
+    font-size: 1.5rem;
+    outline: none;
+    transition: 0.4s;
+    cursor: pointer;
+    padding: 0 1%;
+}
+
+#Calendario:hover{
+    background: #539eda;
+    color: white;
+    
+}
+
+.baseEquipamentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Seleção{
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+
+#Textarea{
+    border: 3px solid #539eda;
+    border-radius: 5px;
+    resize: vertical;
+    width: 75%;
+    outline: none;
+    padding: 0.5%;
+    margin-bottom: 5%;
+    font-size: 1rem;
+    padding-left: 1.5%;
+    color: #2a88d4;
+}
+
+#option{
+    border: 3px solid #539eda;
+    color: #539eda;
+    font-size: 1rem;
+    padding-left: 1.5%;
+    border-radius: 5px;
+    height: 3rem;
+    background: none;
+    width: 78.5%;
+    margin: 5% 0;
+    outline: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#option:hover{
+    background-color: #539eda;
+    color: white;
+}
+
+#nome{
+    height: 3rem;
+    font-size: 1rem;
+    border: 3px solid#539eda;
+    width: 75%;
+    color: #539eda;
+    padding-left: 1.5%;
+    outline: none;
+    border-radius: 5px;
+}
+
+#Enviar{
+    margin-top: 5%;
+    height: 2rem;
+    width: 79%;
+    background-color: #539eda;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#Enviar:hover{
+    color: white;
+    background-color: #63a4da;
+}
+
+#gif{
+    margin-right: 10rem;
+}
+
+@media screen and (max-width: 730px){
+    #title{
+        font-size: 1.5rem;
+    }
+
+    .Agendamento{
+        justify-content: center;
+    }
+
+    .base-site{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #gif{
+        display: flex;
+        height: 15rem;
+        width: 15rem;
+        margin-bottom: 5%;
+        margin: 0;
+    }
+}
