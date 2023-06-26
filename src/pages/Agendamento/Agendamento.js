@@ -3,25 +3,6 @@ import "./Agendamento.css";
 import gif from "../Imagens/Imagens Site/Conference.gif";
 
 function Agendamento() {
-  const [outrosSelecionado, setOutrosSelecionado] = useState(false);
-
-  const handleSelectChange = (event) => {
-    if (event.target.value === "Outros") {
-      setOutrosSelecionado(true);
-    } else {
-      setOutrosSelecionado(false);
-    }
-  };
-
-  const limparTexto = () => {
-    document.getElementById("nome").value = "";
-    document.getElementById("option").selectedIndex = 0;
-    if (outrosSelecionado) {
-      document.getElementById("Textarea").value = "";
-    }
-    document.getElementById("Calendario").value = "";
-    alert("Enviado com sucesso!");
-  };
 
   return (
     <div className="Agendamento">
@@ -29,27 +10,23 @@ function Agendamento() {
       <div className="base-site">
         <img src={gif} id="gif" />
         <div className="baseEquipamentos">
-          <input placeholder="Digite seu nome" type="text" id="nome" />
-          <select onChange={handleSelectChange} id="option">
-            <option value="Palestra">Palestra</option>
-            <option value="Apresentação">Apresentação</option>
-            <option value="Entretenimento">Entretenimento</option>
-            <option value="Reunião">Reunião</option>
-            <option value="Outros">Outros...</option>
-          </select>
+          <input placeholder="Digite seu nome" type="text" className="a" />
+          <input placeholder="Digite a turma" type="text" className="a"/>
+          <input placeholder="Motivo..." type="text" className="a"/>
+          <input placeholder="Equipamentos Utilizados" className="a"/>
+          <input placeholder="Período" className="a" />
 
-          {outrosSelecionado && (
-            <textarea
-              id="Textarea"
-              placeholder="Digite o tipo de evento..."
-              rows="4"
-              cols="50"
-            ></textarea>
-          )}
-
-          <input placeholder="Digite a data" type="datetime-local" id="Calendario" />
+          <div className="selecao-anfiteatro">
+            <input placeholder="Digite a data" type="datetime-local" id="Calendario" />
+            <select placeholder="Bloco" id="Bloco">
+              <option>Bloco</option>
+              <option>1</option>
+              <option>2</option>
+              <option>Ambos</option>
+            </select>
+          </div>
           
-          <button onClick={limparTexto} id="Enviar">Enviar</button>
+          <button id="Enviar">Enviar</button>
         </div>
       </div>
     </div>
