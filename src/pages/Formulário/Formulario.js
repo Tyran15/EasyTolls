@@ -48,7 +48,7 @@ function Formulario() {
     <div className="container">
       <h1 className="title">Manutenção de láboratorio</h1>
       <div id='base_site'>
-      <img src={gif_manuntencao} id='gif_manuntencao' />
+      <img src={gif_manuntencao} id='gif' />
 
       <div id='base_email'>
         <form className="form" onSubmit={sendEmail}>

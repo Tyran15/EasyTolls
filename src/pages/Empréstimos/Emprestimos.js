@@ -62,7 +62,7 @@ function Emprestimos() {
     <div className="Emprestimos">
       <h1 id="title">Empréstimos de equipamentos</h1>
       <div className="base-site">
-        <img src={gif} alt="Research paper" />
+        <img src={gif} alt="Research paper" id="gif" />
         <div className="base-itens">
           <div className="itens">
             <p className="nome">Lápis</p>

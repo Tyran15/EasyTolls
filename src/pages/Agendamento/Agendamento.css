@@ -1,6 +1,5 @@
 .Agendamento{
     display: flex;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -11,15 +10,20 @@
 .base-site{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .selecao-anfiteatro{
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 0;
     margin: 0;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #Calendario{
@@ -27,7 +31,7 @@
     color: #539eda;
     border-radius: 5px;
     height: 3rem;
-    width: 75%;
+    width: 23rem;
     font-size: 1.5rem;
     outline: none;
     transition: 0.4s;
@@ -46,7 +50,6 @@
     color: #539eda;
     border-radius: 5px;
     height: 3.41rem;
-    width: 30%;
     font-size: 1.5rem;
     outline: none;
     transition: 0.4s;
@@ -59,7 +62,6 @@
 #Bloco:hover{
     background: #539eda;
     color: white;
-    
 }
 
 
@@ -80,7 +82,7 @@
 .a{
     height: 2rem;
     margin-bottom: 1rem;
-    width: 25rem;
+    width: 30rem;
     border: none;
     border-bottom: 2px solid #539eda;
     outline: none;
@@ -89,7 +91,7 @@
 #Enviar{
     margin-top: 5%;
     height: 2rem;
-    width: 25rem;
+    width: 30rem;
     background-color: #539eda;
     color: white;
     border-radius: 5px;

@@ -29,6 +29,7 @@
     background-color: #539ddb;
     color: white;
     border: none;
+    border-radius: 5px;
     height: 2rem;
     font-size: 1rem;
     font-weight: bold;
@@ -42,4 +43,15 @@
 
 .nome{
     font-weight: bold;
+}
+
+@media screen and (max-width: 730px){
+    #title{
+       height: 1rem; 
+    }
+
+    .itens{
+        width: 15rem;
+        margin: 0;
+    }
 }

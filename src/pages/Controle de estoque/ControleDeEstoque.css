@@ -11,3 +11,17 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 730px){
+    .base{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .base-estoque{
+        width: 15rem;
+        margin-bottom: 10%;
+    }
+}

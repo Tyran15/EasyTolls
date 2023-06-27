@@ -6,7 +6,7 @@ function Estoque(){
     <div className="Estoque">
       <h1 className="title">Controle de estoque</h1>
       <div className="base">
-        <img src={gif} />
+        <img src={gif} id="gif"/>
         <div className="base-estoque">
           <div className="estoque">
             <div className="nome-estoque">
