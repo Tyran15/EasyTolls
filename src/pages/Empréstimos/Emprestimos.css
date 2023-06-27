@@ -1,6 +1,40 @@
 .Emprestimos{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+}
+
+#title{
+    text-align: center;
+}
+
+.base-site{
+    display: flex;
+    justify-content: space-around;
+}
+
+.base-itens{
+    display: flex;
+    flex-direction: column;
+}
+
+.itens{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 30rem;
+}
+
+#botao{
+    width: 100%;
+    background-color: #539ddb;
+    color: white;
+    border: none;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+.acrescimo{
+    border: none;
+    background: none;
+    cursor: pointer;
 }
