@@ -65,7 +65,7 @@ function Emprestimos() {
         <img src={gif} alt="Research paper" />
         <div className="base-itens">
           <div className="itens">
-            <p>Lápis</p>
+            <p className="nome">Lápis</p>
             <div className="quantidade">
               <button className="acrescimo" onClick={() => decrementarQuantidade("lapis")}>-</button>
               <span>{quantidades.lapis}</span>
@@ -73,7 +73,7 @@ function Emprestimos() {
             </div>
           </div>
           <div className="itens">
-            <p>Borracha</p>
+            <p className="nome">Borracha</p>
             <div className="quantidade">
               <button className="acrescimo" onClick={() => decrementarQuantidade("borracha")}>-</button>
               <span>{quantidades.borracha}</span>
@@ -81,7 +81,7 @@ function Emprestimos() {
             </div>
           </div>
           <div className="itens">
-            <p>Apontador</p>
+            <p className="nome">Apontador</p>
             <div className="quantidade">
               <button className="acrescimo" onClick={() => decrementarQuantidade("apontador")}>-</button>
               <span>{quantidades.apontador}</span>
@@ -89,7 +89,7 @@ function Emprestimos() {
             </div>
           </div>
           <div className="itens">
-            <p>Caneta</p>
+            <p className="nome">Caneta</p>
             <div className="quantidade">
               <button className="acrescimo" onClick={() => decrementarQuantidade("caneta")}>-</button>
               <span>{quantidades.caneta}</span>
@@ -97,7 +97,7 @@ function Emprestimos() {
             </div>
           </div>
           <div className="itens">
-            <p>Canetão</p>
+            <p className="nome">Canetão</p>
             <div className="quantidade">
               <button className="acrescimo" onClick={() => decrementarQuantidade("canetao")}>-</button>
               <span>{quantidades.canetao}</span>
@@ -105,7 +105,7 @@ function Emprestimos() {
             </div>
           </div>
           <div className="itens">
-            <p>Fita durex</p>
+            <p className="nome">Fita durex</p>
             <div className="quantidade">
               <button className="acrescimo" onClick={() => decrementarQuantidade("fitaDurex")}>-</button>
               <span>{quantidades.fitaDurex}</span>
@@ -113,7 +113,7 @@ function Emprestimos() {
             </div>
           </div>
           <div className="itens">
-            <p>Grampeador</p>
+            <p className="nome">Grampeador</p>
             <div className="quantidade">
               <button className="acrescimo" onClick={() => decrementarQuantidade("grampeador")}>-</button>
               <span>{quantidades.grampeador}</span>
@@ -121,7 +121,7 @@ function Emprestimos() {
             </div>
           </div>
           <div className="itens">
-            <p>Cola líquida</p>
+            <p className="nome">Cola líquida</p>
             <div className="quantidade">
               <button className="acrescimo" onClick={() => decrementarQuantidade("colaLiquida")}>-</button>
               <span>{quantidades.colaLiquida}</span>
@@ -129,7 +129,7 @@ function Emprestimos() {
             </div>
           </div>
           <div className="itens">
-            <p>Cola quente</p>
+            <p className="nome">Cola quente</p>
             <div className="quantidade">
               <button className="acrescimo" onClick={() => decrementarQuantidade("colaQuente")}>-</button>
               <span>{quantidades.colaQuente}</span>

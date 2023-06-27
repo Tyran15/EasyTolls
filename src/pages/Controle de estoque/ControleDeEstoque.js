@@ -1,31 +1,90 @@
-import React, { useState } from 'react';
-import "./ControleDeEstoque.css";
+import "./ControleDeEstoque.css"
+import gif from "../Imagens/Imagens Site/Checking boxes.gif"
 
-function ControleDeEstoque() {
-  const [selectedOption, setSelectedOption] = useState('');
-
-  const handleChange = (event) => {
-    setSelectedOption(event.target.value);
-  };
-
-  return (
-    <div className='ControleDeEstoque'>
-        <div className='Estoque'>
-            <h1 id='titulo'>Controle de Estoque</h1>
-            <select id='opção' value={selectedOption} onChange={handleChange}>
-                <option value="">Selecione uma opção</option>
-                <option value="opcao1">Lapís</option>
-                <option value="opcao2">Borracha</option>
-                <option value="opcao3">Régua</option>
-            </select>
+function Estoque(){
+  return(
+    <div className="Estoque">
+      <h1 className="title">Controle de estoque</h1>
+      <div className="base">
+        <img src={gif} />
+        <div className="base-estoque">
+          <div className="estoque">
+            <div className="nome-estoque">
+              <p className="nome">Lapís</p>
+            </div>
+            <div className="quantidade-estoque">
+              <p>122</p>
+            </div>
+          </div>
+          <div className="estoque">
+            <div className="nome-estoque">
+              <p className="nome">Borracha</p>
+            </div>
+            <div className="quantidade-estoque">
+              <p>175</p>
+            </div>
+          </div>
+          <div className="estoque">
+            <div className="nome-estoque">
+              <p className="nome">Apontador</p>
+            </div>
+            <div className="quantidade-estoque">
+              <p>92</p>
+            </div>
+          </div>
+          <div className="estoque">
+            <div className="nome-estoque">
+              <p className="nome">Caneta</p>
+            </div>
+            <div className="quantidade-estoque">
+              <p>64</p>
+            </div>
+          </div>
+          <div className="estoque">
+            <div className="nome-estoque">
+              <p className="nome">Canetão</p>
+            </div>
+            <div className="quantidade-estoque">
+              <p>27</p>
+            </div>
+          </div>
+          <div className="estoque">
+            <div className="nome-estoque">
+              <p className="nome">Fita durex</p>
+            </div>
+            <div className="quantidade-estoque">
+              <p>Sem estoque</p>
+            </div>
+          </div>
+          <div className="estoque">
+            <div className="nome-estoque">
+              <p className="nome">Grampeador</p>
+            </div>
+            <div className="quantidade-estoque">
+              <p>3</p>
+            </div>
+          </div>
+          <div className="estoque">
+            <div className="nome-estoque">
+              <p className="nome">Cola branca</p>
+            </div>
+            <div className="quantidade-estoque">
+              <p>Sem estoque</p>
+            </div>
+          </div>
+          <div className="estoque">
+            <div className="nome-estoque">
+              <p className="nome">Cola quente</p>
+            </div>
+            <div className="quantidade-estoque">
+              <p>Sem estoque</p>
+            </div>
+          </div>
         </div>
-      
-
-      {selectedOption === 'opcao1' && <div className='Conteudo-opção'>345 unidades</div>}
-      {selectedOption === 'opcao2' && <div className='Conteudo-opção'>547 unidades</div>}
-      {selectedOption === 'opcao3' && <div className='Conteudo-opção'>242 unidades</div>}
+      </div>
     </div>
-  );
+  )
+
 }
 
-export default ControleDeEstoque;
+export default Estoque;

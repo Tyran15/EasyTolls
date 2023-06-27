@@ -31,10 +31,15 @@
     border: none;
     height: 2rem;
     font-size: 1rem;
+    font-weight: bold;
 }
 
 .acrescimo{
     border: none;
     background: none;
     cursor: pointer;
+}
+
+.nome{
+    font-weight: bold;
 }
